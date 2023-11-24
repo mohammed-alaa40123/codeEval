@@ -2,7 +2,7 @@
 import requests
 import streamlit as st
 import os
-API = os.getenv("API")
+API = os.getenv("api_key")
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
 headers = {"Authorization": f"Bearer {API}"}
 
