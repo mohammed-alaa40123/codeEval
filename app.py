@@ -27,7 +27,7 @@ prompt = f"Evaluate the given Python code in percentage out of 100 in terms of t
 # Evaluate the code
 
 eval = st.button("Evaluate😊")
-evaluation_result = evaluate_code(prompt)
+evaluation_result = evaluate_code(prompt)[0]["generated_text"]
 
 if eval:
 # Display evaluation result
