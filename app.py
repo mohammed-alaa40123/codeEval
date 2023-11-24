@@ -1,9 +1,10 @@
 
 import requests
 import streamlit as st
-
+import os
+API = os.environ["API"]
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": f"Bearer {API}"}
 
 
 def query(payload):
